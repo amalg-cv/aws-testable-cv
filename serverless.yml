@@ -1,0 +1,17 @@
+service: serverless-clients
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: nodejs14.x
+functions:
+# CloudFormation resource templates here
+resources:
+  # S3
+  - ${file(scripts/resources/s3-bucket.yml)}
+  # CloudFront
+  - ${file(scripts/resources/cloudfront.yml)}
+  # # CodeBuild
+  - ${file(scripts/resources/codebuild.yml)}
+  # # CodePipeline
+  - ${file(scripts/resources/codepipeline.yml)}
