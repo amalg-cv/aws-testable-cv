@@ -1,0 +1,9 @@
+node_modules
+web3/cache
+web3/artifacts
+web3/.env
+web3/coverage
+web3/coverage.json
+web3/typechain
+web3/configs/NFTMarketplace-ganache.json
+web3/configs/NFTMarketplace-hardhat.json
